@@ -43,7 +43,8 @@
                         android:layout_height="156dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:ignore="ObsoleteLayoutParam">
 
                         <LinearLayout
                             android:layout_width="117dp"
@@ -56,7 +57,8 @@
                                 android:layout_height="153dp"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentTop="true"
-                                app:srcCompat="@drawable/noun_1270867_cc" />
+                                app:srcCompat="@drawable/noun_1270867_cc"
+                                tools:ignore="ContentDescription" />
 
                         </LinearLayout>
 
@@ -77,7 +79,8 @@
                                     android:layout_weight="1"
                                     android:ems="10"
                                     android:inputType="textPersonName"
-                                    android:text="조혜영" />
+                                    android:text="조혜영"
+                                    tools:ignore="HardcodedText,LabelFor" />
 
                                 <Button
                                     android:id="@+id/button"
@@ -85,7 +88,8 @@
                                     android:layout_height="40dp"
                                     android:layout_weight="1"
                                     android:onClick="changeName"
-                                    android:text="변경" />
+                                    android:text="변경"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -100,7 +104,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="50dp"
                                     android:duplicateParentState="true"
-                                    android:text="남" />
+                                    android:text="남"
+                                    tools:ignore="HardcodedText,RtlHardcoded" />
 
                                 <RadioButton
                                     android:id="@+id/female"
@@ -109,7 +114,8 @@
                                     android:layout_marginLeft="60dp"
                                     android:checked="true"
                                     android:duplicateParentState="true"
-                                    android:text="여" />
+                                    android:text="여"
+                                    tools:ignore="HardcodedText,RtlHardcoded" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -124,7 +130,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="83dp"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -136,7 +143,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:layout_weight="1"
-                                    android:text="선호 장르" />
+                                    android:text="선호 장르"
+                                    tools:ignore="HardcodedText,InefficientWeight" />
 
                             </LinearLayout>
 
@@ -150,14 +158,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="true"
-                                    android:text="SF" />
+                                    android:text="SF"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="공포" />
+                                    android:text="공포"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox3"
@@ -165,14 +175,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="true"
-                                    android:text="액션" />
+                                    android:text="액션"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="드라마" />
+                                    android:text="드라마"
+                                    tools:ignore="HardcodedText" />
                             </TableRow>
 
                             <TableRow
@@ -184,14 +196,16 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="멜로" />
+                                    android:text="멜로"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox8"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="느와르" />
+                                    android:text="느와르"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox7"
@@ -199,14 +213,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="true"
-                                    android:text="판타지" />
+                                    android:text="판타지"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox6"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="서스펜스" />
+                                    android:text="서스펜스"
+                                    tools:ignore="HardcodedText" />
                             </TableRow>
 
                         </LinearLayout>
@@ -216,23 +232,27 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="InefficientWeight,UselessParent">
 
                             <Spinner
                                 android:id="@+id/spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                tools:ignore="InefficientWeight,NestedWeights" />
 
                             <ImageSwitcher
                                 android:layout_width="match_parent"
-                                android:layout_height="177dp" >
+                                android:layout_height="177dp"
+                                tools:ignore="UselessLeaf">
 
                             </ImageSwitcher>
                         </LinearLayout>
@@ -254,7 +274,8 @@
                         android:layout_height="match_parent"
                         android:ems="10"
                         android:inputType="textMultiLine"
-                        android:text="학번 : 215230091 \n나이 : 2n \n취미 : 노래, 영화감상" />
+                        android:text="학번 : 215230091 \n나이 : 2n \n취미 : 노래, 영화감상"
+                        tools:ignore="HardcodedText,LabelFor" />
                 </LinearLayout>
 
             </FrameLayout>
