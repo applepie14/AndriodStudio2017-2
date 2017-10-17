@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- array의 이름은 location 입니다.-->
+
+    <string-array name="item">
+        <item>최애 영화</item>
+        <item>자주가는 곳</item>
+        <item>사는 곳</item>
+        <item>가고싶은 여행지</item>
+    </string-array>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hy17.Setting">
+
+    <TabHost
+        android:id="@+id/tabhost1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="156dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="156dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="117dp"
+                                android:layout_height="153dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                app:srcCompat="@drawable/noun_1270867_cc" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="153dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:inputType="textPersonName"
+                                    android:text="조혜영" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:onClick="changeName"
+                                    android:text="변경" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="57dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:duplicateParentState="true"
+                                    android:text="남" />
+
+                                <RadioButton
+                                    android:id="@+id/female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="60dp"
+                                    android:checked="true"
+                                    android:duplicateParentState="true"
+                                    android:text="여" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="94dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="83dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    android:text="선호 장르" />
+
+                            </LinearLayout>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="SF" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="공포" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="액션" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="드라마" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="멜로" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="느와르" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="판타지" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="서스펜스" />
+                            </TableRow>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageSwitcher
+                                android:layout_width="match_parent"
+                                android:layout_height="177dp" >
+
+                            </ImageSwitcher>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:text="학번 : 215230091 \n나이 : 2n \n취미 : 노래, 영화감상" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
