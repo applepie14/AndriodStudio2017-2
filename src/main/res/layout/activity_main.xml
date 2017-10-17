@@ -21,7 +21,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:onClick="onChangeFragment"
-        android:text="화면전환" />
+        android:text="화면 전환" />
 
     <TextView
         android:id="@+id/textView2"
