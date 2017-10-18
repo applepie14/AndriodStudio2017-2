@@ -36,6 +36,18 @@
         android:textSize="25dp"
         tools:ignore="HardcodedText,SpUsage" />
 
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button5"
+        android:layout_weight="1"
+        tools:ignore="ObsoleteLayoutParam">
+
+    </FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -76,17 +88,5 @@
             tools:ignore="ButtonStyle,HardcodedText" />
 
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/button5"
-        android:layout_weight="1"
-        android:layout_above="@+id/linearLayout2"
-        tools:ignore="ObsoleteLayoutParam">
-
-    </FrameLayout>
 
 </RelativeLayout>

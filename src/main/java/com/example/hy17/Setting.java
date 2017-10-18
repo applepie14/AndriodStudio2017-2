@@ -5,6 +5,8 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Scene;
+import android.transition.TransitionManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -34,7 +36,8 @@ public class Setting extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 //각 항목 클릭시 포지션값을 토스트에 띄운다.
-                Toast.makeText(getApplicationContext(), Integer.toString(position), Toast.LENGTH_SHORT).show();
+                Toast showToast = Toast.makeText(getApplicationContext(), Integer.toString(position), Toast.LENGTH_SHORT);
+                showToast.show();
 
             }
 
@@ -58,7 +61,7 @@ public class Setting extends AppCompatActivity {
 
 
 
-    }
 
+    }
 
 }
