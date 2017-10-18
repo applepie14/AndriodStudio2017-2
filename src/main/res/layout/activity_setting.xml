@@ -235,27 +235,11 @@
                         android:orientation="horizontal"
                         tools:ignore="DisableBaselineAlignment">
 
-                        <LinearLayout
+                        <Spinner
+                            android:id="@+id/spinner"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            tools:ignore="InefficientWeight,UselessParent">
-
-                            <Spinner
-                                android:id="@+id/spinner"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                tools:ignore="InefficientWeight,NestedWeights" />
-
-                            <ImageSwitcher
-                                android:layout_width="match_parent"
-                                android:layout_height="177dp"
-                                tools:ignore="UselessLeaf">
-
-                            </ImageSwitcher>
-                        </LinearLayout>
+                            android:layout_height="wrap_content"
+                            tools:ignore="InefficientWeight,NestedWeights" />
 
                     </LinearLayout>
 
